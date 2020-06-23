@@ -25,7 +25,7 @@ $(document).ready(function () {
         
         /* 尝试缩短网址 */ 
         $.ajax({
-            url: 'https://api.php?url=' + encodeURIComponent(link),
+            url: 'https://peela.cn/api.php?url=' + encodeURIComponent(link),
             dataType: 'json',
             success: function (data) {
                 if(data.code == 200) $outputLink.val(data.result).focus().select();
